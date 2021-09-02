@@ -1,6 +1,7 @@
 # reportlab-action
 [![Build Container Image](https://github.com/sksat/reportlab-action/actions/workflows/build-image.yml/badge.svg)](https://github.com/sksat/reportlab-action/actions/workflows/build-image.yml)
 [![test Action](https://github.com/sksat/reportlab-action/actions/workflows/test-action.yml/badge.svg)](https://github.com/sksat/reportlab-action/actions/workflows/test-action.yml)
+
 Edit PDF on GitHub Actions by ReporLab
 
 ## example
@@ -8,10 +9,11 @@ Edit PDF on GitHub Actions by ReporLab
 ```yaml
 - uses: ./
   with:
-    script: test/hello.py
+    script: hello.py
     output: hello.pdf
 ```
 
+hello.py
 ```python
 from PyPDF2 import PdfFileWriter, PdfFileReader
 
