@@ -19,7 +19,6 @@ jobs:
       - uses: actions/checkout@v2
 
       - uses: ./
-        working-directory: test
         with:
-          script: hello.py
+          script: test/hello.py
           output: hello.pdf
