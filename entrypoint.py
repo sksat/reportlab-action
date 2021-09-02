@@ -3,7 +3,7 @@
 import os
 import sys
 import shutil
-from importlib import import_module
+from importlib import machinery
 
 script_path = sys.argv[1]
 if not os.path.exists(script_path):
@@ -11,9 +11,9 @@ if not os.path.exists(script_path):
     sys.exit(1)
 
 print("loading script from " + script_path)
-shutil.copy(script_path, "./script.py")
 
-script = import_module("script")
+loader = machinery.SourceFileLoader('.', script_path)
+script = loader.load_module()
 
 print("execure script")
 output = sys.argv[2]
