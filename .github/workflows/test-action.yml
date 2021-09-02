@@ -23,4 +23,7 @@ jobs:
           script: test/hello.py
           output: hello.pdf
 
-      - run: ls hello.pdf
+      - name: check:
+        run: |
+          ls
+          ls hello.pdf
