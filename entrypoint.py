@@ -1,3 +1,5 @@
+#!/bin/python
+
 import sys
 import shutil
 from importlib import import_module
@@ -9,5 +11,5 @@ shutil.copy(script_path, "./script.py")
 script = import_module("script")
 
 print("execure script")
-output = "/github/workspace" + sys.argv[2]
+output = sys.argv[2]
 script.generate(output)

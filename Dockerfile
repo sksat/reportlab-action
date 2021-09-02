@@ -8,5 +8,4 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 
 ADD entrypoint.py .
-CMD ["/entrypoint.py"]
-ENTRYPOINT ["python"]
+ENTRYPOINT ["/entrypoint.py"]
