@@ -22,3 +22,5 @@ jobs:
         with:
           script: test/hello.py
           output: hello.pdf
+
+      - run: ls hello.pdf
