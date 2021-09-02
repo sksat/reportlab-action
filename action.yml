@@ -12,7 +12,7 @@ inputs:
 
 runs:
   using: 'docker'
-  image: 'Dockerfile'
+  image: 'docker://ghcr.io/sksat/reportlab-action:v0.1.0'
   args:
     - ${{ inputs.script }}
     - ${{ inputs.output }}
