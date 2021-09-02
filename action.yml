@@ -1,0 +1,18 @@
+name: 'Edit PDF by ReportLab'
+description: 'Edit PDF by ReportLab'
+author: 'sksat <sksat@sksat.net>'
+
+inputs:
+  script:
+    description: your script
+    required: true
+  output:
+    description: output PDF
+    required: true
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.script }}
+    - ${{ inputs.output }}

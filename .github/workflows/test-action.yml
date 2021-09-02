@@ -1,0 +1,29 @@
+name: test Action
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'test/**'
+      - 'action.yml'
+      - 'requirements.txt'
+      - 'entrypoint.py'
+      - 'Dockerfile'
+      - '.github/workflows/test-action.yml'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: ./
+        with:
+          script: test/hello.py
+          output: hello.pdf
+
+      - name: check
+        run: |
+          ls
+          ls hello.pdf
