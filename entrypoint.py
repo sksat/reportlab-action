@@ -9,4 +9,5 @@ shutil.copy(script_path, "./script.py")
 script = import_module("script")
 
 print("execure script")
-script.generate(sys.argv[2])
+output = "/github/workspace" + sys.argv[2]
+script.generate(output)
