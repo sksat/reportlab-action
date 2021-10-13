@@ -1,2 +1,2 @@
-reportlab ==3.6.1
+reportlab ==3.6.2
 pypdf2 == 1.26.0
