@@ -1,4 +1,4 @@
-FROM python:3.10.2-alpine3.14
+FROM python:3.10.3-alpine3.14
 LABEL maintainer "sksat <sksat@sksat.net>"
 
 RUN apk add --update --no-cache jpeg-dev zlib-dev
