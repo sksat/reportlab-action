@@ -4,6 +4,8 @@ LABEL maintainer "sksat <sksat@sksat.net>"
 RUN apk add --update --no-cache jpeg-dev zlib-dev
 RUN apk add --no-cache build-base
 
+RUN pip install --upgrade pip && pip install pipenv
+
 COPY Pipfile .
 COPY Pipfile.lock .
 RUN pipenv install
