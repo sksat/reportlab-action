@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-reportlab = "==3.6.8"
+reportlab = "==3.6.12"
 PyPDF2 = "==1.28.6"
 
 [dev-packages]
