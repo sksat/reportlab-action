@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "d369b315e9efaf334afaea227d7668878a71c0bd7740b86949e945c52c68769e"
+            "sha256": "e3d2e8f5b1e96c91621a2399e583171047d4c21f705c918158f92b334087a024"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -80,11 +80,11 @@
         },
         "pypdf2": {
             "hashes": [
-                "sha256:c0840835d18357b077da05bdad1423f5e29419f318135b6a6542895930dc4905",
-                "sha256:d7118f0187153257b1f906dcfcd8236608f4987b6a9999b7c5ad49114706a1ad"
+                "sha256:a74408f69ba6271f71b9352ef4ed03dc53a31aa404d29b5d31f53bfecfee1440",
+                "sha256:d16e4205cfee272fbdc0568b68d82be796540b1537508cef59388f839c191928"
             ],
-            "markers": "python_version >= '2.7'",
-            "version": "==1.28.6"
+            "markers": "python_version >= '3.6'",
+            "version": "==3.0.1"
         },
         "reportlab": {
             "hashes": [
